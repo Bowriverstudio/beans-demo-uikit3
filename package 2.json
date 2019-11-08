@@ -1,0 +1,14 @@
+{
+  "name": "beans-demo-uikit3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Bowriverstudio/beans-demo-uikit3.git",
+  "author": "Maurice Tadros <maurice.tadros@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "uikit": "^3.2.3"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2"
+  }
+}

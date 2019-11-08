@@ -3,21 +3,62 @@
 <?php
 
 // Include Beans. Do not remove the line below.
+use function Gutenberg_Courses\Example_Blocks\_get_plugin_directory;
+use function Gutenberg_Courses\Example_Blocks\_get_plugin_url;
+
 require_once( get_template_directory() . '/lib/init.php' );
 
-require_once( get_stylesheet_directory() . '/lib/renderer/fragments/toolbar.php' );
+//require_once( get_stylesheet_directory() . '/lib/renderer/fragments/toolbar.php' );
 
 
-/*
- * Remove this action and callback function if you do not whish to use LESS to style your site or overwrite UIkit variables.
- * If you are using LESS, make sure to enable development mode via the Admin->Appearance->Settings option. LESS will then be processed on the fly.
- */
-add_action( 'beans_uikit_enqueue_scripts', 'beans_child_enqueue_uikit_assets' );
+add_action( 'wp_enqueue_scripts', 'beans_demo_enqueue' );
 
-function beans_child_enqueue_uikit_assets() {
 
-    beans_compiler_add_fragment( 'uikit', get_stylesheet_directory_uri() . '/style.less', 'less' );
+function beans_demo_enqueue(){
+
+    $script_path = '/dist/js/app.js';
+    wp_enqueue_script(
+        'uikit3-demo-js',
+        get_stylesheet_directory_uri() .$script_path,
+        array(),
+        filemtime( get_stylesheet_directory() .$script_path )
+    );
+
+    // Enqueue optional editor only styles
+    $style_path = '/dist/css/style.css';
+
+    wp_enqueue_style(
+        'uikit3-demo-css',
+         get_stylesheet_directory_uri() . $style_path,
+        [ ],
+        filemtime( get_stylesheet_directory() . $style_path )
+    );
+
+
+//    wp_enqueue_script(
+//        'uikit3',
+//        'https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js',
+//        '',
+//        '1'
+//    );
+//
+//    wp_enqueue_script(
+//        'uikit3_icons',
+//        'https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js',
+//        '',
+//        '1'
+//    );
+//
+//
+//    wp_enqueue_style(
+//        'uikit3_css',
+//        'https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css',
+//        '',
+//        '1'
+//
+//    );
 
 }
+
 
 
