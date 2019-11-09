@@ -117,7 +117,7 @@ return array(
                 'type' => 'custom_html',
                 'args' => [
                     'title'  => '',
-                    'content'   => '<a class="tm-purchase uk-float-left" href="http://www.getbeans.io/download-beans/?no_cache=1"><i class="uk-icon-download uk-margin-small-right"></i> <span>Download</span></a>',
+                    'content'   => '<a class="tm-purchase uk-float-left" href="http://www.getbeans.io/download-beans/?no_cache=1"><i uk-icon="icon:download"></i> <span>Download</span></a>',
                     'filter' => 1,
                     'visual' => 1,
                 ],
