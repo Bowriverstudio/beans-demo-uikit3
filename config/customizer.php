@@ -6,5 +6,6 @@
  */
 
 return array(
-    'beans_header_max_width' => 'uk-container-small'
+    'beans_header_max_width' => 'uk-container-small',
+    'beans_display_toolbar' => true,
 );

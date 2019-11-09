@@ -106,7 +106,7 @@ return array(
                 'type' => 'custom_html',
                 'args' => [
                     'title'  => '',
-                    'content'   => '<a href="http://www.getbeans.io" title="Beans site"><img src="https://demo.getbeans.io/uploads/Beans-logo-white.png" alt="Beans"></a><span><i class="uk-icon-long-arrow-right uk-margin-small-left uk-margin-small-right"></i><a href="/" title="Beans Demos">Demo</a></span>',
+                    'content'   => '<a href="http://www.getbeans.io" title="Beans site"><img src="https://demo.getbeans.io/uploads/Beans-logo-white.png" alt="Beans"></a><span><i uk-icon="icon:triangle-right"></i><a href="/" title="Beans Demos">Demo</a></span>',
                     'filter' => 1,
                     'visual' => 1,
                 ],

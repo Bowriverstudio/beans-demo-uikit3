@@ -1,12 +1,13 @@
 <?php
 
+if ( get_theme_mod('beans_display_toolbar') ) {
 
-beans_add_smart_action( "beans_header_before_markup", "display_topbar" );
-
+    beans_add_smart_action("beans_header_before_markup", "display_topbar");
+}
 function display_topbar() {
     ?>
     <div class="tm-toolbar">
-        <div class="uk-container">
+        <div class="uk-container <?php echo beans_get_header_max_width() ?>">
             <div class="tm-logo uk-float-left uk-text-small">
                 <?php echo beans_get_widget_area_output( 'toolbar_left_area' ); ?>
             </div>

@@ -1,14 +1,12 @@
-
-
 <?php
+namespace Beans_Demo_UiKit3;
 
 // Include Beans. Do not remove the line below.
 require_once( get_template_directory() . '/lib/init.php' );
 
-//require_once( get_stylesheet_directory() . '/lib/renderer/fragments/toolbar.php' );
 
 
-add_action( 'wp_enqueue_scripts', 'beans_demo_enqueue' );
+add_action( 'wp_enqueue_scripts', __NAMESPACE__.'\beans_demo_enqueue' );
 
 
 function beans_demo_enqueue(){
@@ -34,7 +32,30 @@ function beans_demo_enqueue(){
 }
 
 
-beans_add_smart_action( "beans_post_title_before_markup", "display_beans_post_title" );
+
+add_action( 'init', __NAMESPACE__.'\beans_includes' );
+/**
+ *
+ * @return void
+ */
+function beans_includes()
+{
+
+    // Include renderers.
+    if ( get_theme_mod('beans_display_toolbar') ){
+    require_once( get_stylesheet_directory() . '/lib/renderer/fragments/toolbar.php' );
+    }
+
+    // Include customizer.
+    if ( is_customize_preview() ) {
+        require_once get_stylesheet_directory().'/lib/admin/wp-customizer.php';
+    }
+
+
+}
+
+
+beans_add_smart_action( "beans_post_title_before_markup", __NAMESPACE__ ."\display_beans_post_title" );
 function display_beans_post_title(){
 
 //ddd(beans_get_header_max_width());
