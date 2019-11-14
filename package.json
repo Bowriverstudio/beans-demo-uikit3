@@ -4,7 +4,6 @@
   "description": "Webpack UIKit app template",
   "repository": "git@github.com:Bowriverstudio/beans-demo-uikit3.git",
   "author": "Maurice Tadros <maurice.tadros@gmail.com>",
-
   "scripts": {
     "build": "webpack --mode=development --progress --hide-modules",
     "production": "webpack --mode=production --progress --hide-modules --devtool=source-maps",

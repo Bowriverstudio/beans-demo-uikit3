@@ -13,8 +13,8 @@
 // @TODO Disnel - Onboarding: Add Pages.
 
 return array(
-    'title'       => __( 'Beans Demo', 'genesis-sample' ),
-    'description' => __( 'Beans Demo with UiKit 2 as the frontend framework.', 'genesis-sample' ),
+    'title'       => __( 'Beans Demo', 'tm-beans' ),
+    'description' => __( 'Beans Demo with UiKit 2 as the frontend framework.', 'tm-beans' ),
     'thumbnail'   => get_stylesheet_directory_uri() . '/config/import/images/thumbnails/home-black-white.jpg',
     'demo_url'    => 'https://demo.studiopress.com/genesis-sample/',
 
@@ -34,6 +34,14 @@ return array(
 				'icon' => 'https://ps.w.org/simple-social-icons/assets/icon-128x128.png',
 				'description' => 'Simple Social Icons is an easy to use, customizable way to display icons that link visitors to your various social profiles.',
 			),
+            array(
+                'name'       => __( 'Query Monitor', 'tm-beans' ),
+                'slug'       => 'query-monitor/query-monitor.php',
+                'public_url' => 'https://querymonitor.com/',
+                'description' => 'Query Monitor is the developer tools panel for WordPress',
+                'install' => 'wp plugin install query-monitor --activate;',
+                'required' => false
+            ),
 		),
 	),
 
@@ -54,14 +62,17 @@ return array(
 //			'comment_status' => 'closed',
 //			'ping_status'    => 'closed',
 //		),
-//		'about' => array(
-//			'post_title'     => 'About Us',
-//			'post_content'   => require dirname( __FILE__ ) . '/import/content/about.php',
-//			'post_type'      => 'page',
-//			'post_status'    => 'publish',
-//			'comment_status' => 'closed',
-//			'ping_status'    => 'closed',
-//		),
+		'about' => array(
+			'post_title'     => 'About Us',
+			'post_content'   => require dirname( __FILE__ ) . '/import/content/about.php',
+			'post_type'      => 'page',
+			'post_status'    => 'publish',
+			'comment_status' => 'closed',
+			'ping_status'    => 'closed',
+            'post_meta'           => array(
+                'beans_layout' => 'c'
+            )
+		),
 //		'contact' => array(
 //			'post_title'     => 'Contact Us',
 //			'post_content'   => require dirname( __FILE__ ) . '/import/content/contact.php',
