@@ -40,6 +40,6 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "uikit": "^3.1.7"
+    "uikit": "^3.2.3"
   }
 }
