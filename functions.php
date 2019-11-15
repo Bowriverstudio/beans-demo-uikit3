@@ -1,4 +1,13 @@
 <?php
+/**
+ * Beans Demo Uikit3
+ *
+ *
+ * @author Maurice
+ * @link   https://www.getbeans.io
+ * @license MIT
+ * @package Beans_Demo_UiKit3
+ */
 namespace Beans_Demo_UiKit3;
 
 // Include Beans. Do not remove the line below.

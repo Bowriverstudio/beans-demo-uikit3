@@ -90,7 +90,31 @@ return array(
 //			'comment_status' => 'closed',
 //			'ping_status'    => 'closed',
 //		),
-	),
+        'typography'            => array(
+            'post_title'     => 'Beans typography',
+            'post_content'   => require dirname( __FILE__ ) . '/import/content/typography.php',
+            'post_type'      => 'page',
+            'post_status'    => 'publish',
+            'comment_status' => 'closed',
+            'ping_status'    => 'closed',
+            'post_meta'           => array(
+                'beans_layout' => 'c'
+            )
+        ),
+        'gutenberg-blocks'      => array(
+            'post_title'     => 'Gutenberg Blocks',
+            'post_content'   => require dirname( __FILE__ ) . '/import/content/gutenberg-blocks.php',
+            'post_type'      => 'page',
+            'post_status'    => 'publish',
+            'comment_status' => 'closed',
+            'ping_status'    => 'closed',
+            'post_meta'           => array(
+                'beans_layout' => 'c'
+            )
+        ),
+
+
+    ),
 
 	'navigation_menus' => array(
 		'primary' => array(
