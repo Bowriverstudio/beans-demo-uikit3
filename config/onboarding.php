@@ -46,14 +46,18 @@ return array(
 	),
 
 	'content' => array(
-//		'homepage' => array(
-//			'post_title'     => 'Homepage',
-//			'post_content'   => require dirname( __FILE__ ) . '/import/content/homepage.php',
-//			'post_type'      => 'page',
-//			'post_status'    => 'publish',
-//			'comment_status' => 'closed',
-//			'ping_status'    => 'closed',
-//		),
+		'beans-looks-beautiful-on-all-devices' => array(
+			'post_title'     => 'Beans looks beautiful on all devices',
+			'post_content'   => require dirname( __FILE__ ) . '/import/content/beans-looks-beautiful-on-all-devices.php',
+            'post_type'      => 'post',
+            'post_status'    => 'publish',
+            'featured_image' => CHILD_URL . '/config/import/images/Responsive.jpg',
+            'comment_status' => 'closed',
+            'ping_status'    => 'closed',
+            'post_meta'           => array(
+                'beans_layout' => 'c_sp'
+            )
+        ),
 //		'blocks' => array(
 //			'post_title'     => 'Block Examples',
 //			'post_content'   => require dirname( __FILE__ ) . '/import/content/block-examples.php',

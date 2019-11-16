@@ -3,6 +3,7 @@
 // 1. Your custom variables and variable overwrites
 
 
+
 // 2. Import default variables and available mixins
 @import "~uikit/src/scss/variables-theme.scss";
 @import "~uikit/src/scss/mixins-theme.scss";
@@ -22,3 +23,4 @@
 // 4. Import UIkit
 @import "~uikit/src/scss/uikit-theme.scss";
 
+@import "../../../../plugins/beans-frontend-framework-uikit3/assets/scss/uikit-theme/_index.scss";
