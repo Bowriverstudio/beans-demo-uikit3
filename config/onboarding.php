@@ -17,7 +17,6 @@ return array(
     'description' => __( 'Beans Demo with UiKit 2 as the frontend framework.', 'tm-beans' ),
     'thumbnail'   => get_stylesheet_directory_uri() . '/config/import/images/thumbnails/home-black-white.jpg',
     'demo_url'    => 'https://demo.studiopress.com/genesis-sample/',
-
 	'dependencies' => array(
 		'plugins' => array(
 			array(
@@ -58,14 +57,57 @@ return array(
                 'beans_layout' => 'c_sp'
             )
         ),
-//		'blocks' => array(
-//			'post_title'     => 'Block Examples',
-//			'post_content'   => require dirname( __FILE__ ) . '/import/content/block-examples.php',
-//			'post_type'      => 'page',
-//			'post_status'    => 'publish',
-//			'comment_status' => 'closed',
-//			'ping_status'    => 'closed',
-//		),
+        'SEO-friendly' => array(
+            'post_title'     => 'SEO friendly',
+            'post_content'   => require dirname( __FILE__ ) . '/import/content/SEO-friendly.php',
+            'post_type'      => 'post',
+            'post_status'    => 'publish',
+            'featured_image' => CHILD_URL . '/config/import/images/Seo.jpg',
+            'comment_status' => 'closed',
+            'ping_status'    => 'closed',
+            'post_meta'           => array(
+                'beans_layout' => 'sp_c'
+            )
+        ),
+        'Stable-updates' => array(
+            'post_title'     => 'Stable updates',
+            'post_content'   => require dirname( __FILE__ ) . '/import/content/Stable-updates.php',
+            'post_type'      => 'post',
+            'post_status'    => 'publish',
+            'featured_image' => CHILD_URL . '/config/import/images/Updates.jpg',
+            'comment_status' => 'closed',
+            'ping_status'    => 'closed',
+            'post_meta'           => array(
+                'beans_layout' => 'c'
+            )
+        ),
+
+        'Built-with-the-ultimate-front-end-library' => array(
+            'post_title'     => 'Stable updates',
+            'post_content'   => require dirname( __FILE__ ) . '/import/content/Built-with-the-ultimate-front-end-library.php',
+            'post_type'      => 'post',
+            'post_status'    => 'publish',
+            'featured_image' => CHILD_URL . '/config/import/images/Updates.jpg',
+            'comment_status' => 'closed',
+            'ping_status'    => 'closed',
+            'post_meta'           => array(
+                'beans_layout' => 'c_sp_ss'
+            )
+        ),
+
+        'Loads-in-a-blink-of-an-eye' => array(
+            'post_title'     => 'Stable updates',
+            'post_content'   => require dirname( __FILE__ ) . '/import/content/Loads-in-a-blink-of-an-eye.php',
+            'post_type'      => 'post',
+            'post_status'    => 'publish',
+            'featured_image' => CHILD_URL . '/config/import/images/Speed.jpg',
+            'comment_status' => 'closed',
+            'ping_status'    => 'closed',
+            'post_meta'           => array(
+                'beans_layout' => 'c_sp_ss'
+            )
+        ),
+
 		'about' => array(
 			'post_title'     => 'About Us',
 			'post_content'   => require dirname( __FILE__ ) . '/import/content/about.php',
@@ -77,23 +119,7 @@ return array(
                 'beans_layout' => 'c'
             )
 		),
-//		'contact' => array(
-//			'post_title'     => 'Contact Us',
-//			'post_content'   => require dirname( __FILE__ ) . '/import/content/contact.php',
-//			'post_type'      => 'page',
-//			'post_status'    => 'publish',
-//			'comment_status' => 'closed',
-//			'ping_status'    => 'closed',
-//		),
-//		'landing_page' => array(
-//			'post_title'     => 'Landing Page',
-//			'post_content'   => require dirname( __FILE__ ) . '/import/content/landing-page.php',
-//			'post_type'      => 'page',
-//			'post_status'    => 'publish',
-//			'page_template'  => 'page-templates/blocks.php',
-//			'comment_status' => 'closed',
-//			'ping_status'    => 'closed',
-//		),
+
         'typography'            => array(
             'post_title'     => 'Beans typography',
             'post_content'   => require dirname( __FILE__ ) . '/import/content/typography.php',
