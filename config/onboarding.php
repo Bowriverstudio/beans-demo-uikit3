@@ -19,19 +19,33 @@ return array(
     'demo_url' => 'https://demo.studiopress.com/genesis-sample/',
     'dependencies' => array(
         'plugins' => array(
+
+           array(
+               'name' => __('Beans Frontend Framework uikit3', 'tm-beans'),
+               'slug' => 'beans-frontend-framework-uikit3/beans-frontend-framework-uikit3.php',
+               'public_url' => 'https://github.com/Bowriverstudio/beans-frontend-framework-uikit3',
+               'description' => 'Handles rendering the for incredibly powerful Beans Framework with uikit3.',
+               'install' => 'Download from https://github.com/Bowriverstudio/beans-frontend-framework-uikit3',
+               'required' => true
+           ),
+
             array(
-                'name' => __('Atomic Blocks (Third Party)', 'tm-beans'),
-                'slug' => 'atomic-blocks/atomicblocks.php',
-                'public_url' => 'https://atomicblocks.com/',
-                'icon' => 'https://pbs.twimg.com/profile_images/1022173406106550273/mHoVSnLp_400x400.jpg',
-                'description' => 'A Collection of blocks for the new WordPress block editor, also known as Gutenberg. Blocks are chunks of content such as paragraphs, images, galleries, columns, and more. Building with blocks gives you more control to quickly create and launch any kind of site you want!',
+                'name' => __('Beans Visual Hook Guide', 'tm-beans'),
+                'slug' => 'beans-visual-hook-guide/beans-visual-hook-guide.php',
+                'public_url' => 'https://wordpress.org/plugins/beans-visual-hook-guide/',
+                'icon' => 'https://ps.w.org/beans-visual-hook-guide/assets/icon-256x256.png?rev=1841179',
+                'description' => 'A Plugin tool to aid theme development with the innovative, flexible, and incredibly powerful Beans Framework.',
+                'install' => 'Download from https://github.com/Bowriverstudio/Beans-Visual-Hook-Guide - there is a small patch',
+                'required' => false
             ),
             array(
-                'name' => __('Simple Social Icons (Third Party)', 'tm-beans'),
-                'slug' => 'simple-social-icons/simple-social-icons.php',
-                'public_url' => 'https://wordpress.org/plugins/simple-social-icons/',
-                'icon' => 'https://ps.w.org/simple-social-icons/assets/icon-128x128.png',
-                'description' => 'Simple Social Icons is an easy to use, customizable way to display icons that link visitors to your various social profiles.',
+                'name' => __('Debug Toolkit', 'tm-beans'),
+                'slug' => 'debug-toolkit/debug-toolkit.php',
+                'public_url' => 'https://wordpress.org/plugins/debug-toolkit/',
+                'icon' => 'https://ps.w.org/debug-toolkit/assets/icon-256x256.png?rev=2047222',
+                'description' => 'Debug Toolkit makes debugging your code easier and more enjoyable.',
+                'install' => 'wp plugin install debug-toolkit --activate;',
+                'required' => false
             ),
             array(
                 'name' => __('Query Monitor', 'tm-beans'),
@@ -39,6 +53,14 @@ return array(
                 'public_url' => 'https://querymonitor.com/',
                 'description' => 'Query Monitor is the developer tools panel for WordPress',
                 'install' => 'wp plugin install query-monitor --activate;',
+                'required' => false
+            ),
+            array(
+                'name' => __('Rollbar', 'tm-beans'),
+                'slug' => 'rollbar/rollbar-php-wordpress.php',
+                'public_url' => 'https://en-ca.wordpress.org/plugins/rollbar/',
+                'icon' => 'https://ps.w.org/rollbar/assets/icon-256x256.png?rev=1281525',
+                'description' => 'Rollbar collects errors that happen in your application, notifies you, and analyzes them so you can debug and fix them.',
                 'required' => false
             ),
         ),
@@ -108,18 +130,6 @@ return array(
             )
         ),
 
-        'about' => array(
-            'post_title' => 'About Us',
-            'post_content' => require dirname(__FILE__) . '/import/content/about.php',
-            'post_type' => 'page',
-            'post_status' => 'publish',
-            'comment_status' => 'closed',
-            'ping_status' => 'closed',
-            'post_meta' => array(
-                'beans_layout' => 'c'
-            )
-        ),
-
         'typography' => array(
             'post_title' => 'Beans typography',
             'post_content' => require dirname(__FILE__) . '/import/content/typography.php',
@@ -150,19 +160,23 @@ return array(
         'primary' => array(
             'homepage' => array(
                 'title' => 'Home',
+                'url'   => get_site_url()
             ),
-            'about' => array(
-                'title' => 'About Us',
+            'gutenberg-blocks' => array(
+                'title' => 'Gutenberg',
             ),
-            'contact' => array(
-                'title' => 'Contact Us',
+
+            'layout' => array(
+                'title' => 'Layout'
             ),
-            'blocks' => array(
-                'title' => 'Block Examples',
+            'Loads-in-a-blink-of-an-eye' => array(
+                'title' => 'Loads in a blink of an eye',
+                'parent' => 'layout'
             ),
-//			'landing'  => array(
-//				'title' => 'Landing Page',
-//			),
+            'typography' => array(
+                'title' => 'Typography',
+            ),
+
         ),
     ),
     'widgets' => [
