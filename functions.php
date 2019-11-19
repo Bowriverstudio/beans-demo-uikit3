@@ -13,7 +13,6 @@ namespace Beans_Demo_UiKit3;
 // Include Beans. Do not remove the line below.
 require_once( get_template_directory() . '/lib/init.php' );
 
-require_once (CHILD_PATH .'/lib/renderer/fragments/toolbar.php');
 
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__.'\beans_demo_enqueue' );
@@ -52,9 +51,7 @@ function beans_includes()
 {
 
     // Include renderers.
-    if ( get_theme_mod('beans_display_toolbar') ){
-    require_once( get_stylesheet_directory() . '/lib/renderer/fragments/toolbar.php' );
-    }
+    require_once (CHILD_PATH .'/lib/renderer/fragments/toolbar.php');
 
     // Include customizer.
     if ( is_customize_preview() ) {
@@ -64,24 +61,6 @@ function beans_includes()
 
 }
 
-
-beans_add_smart_action( "beans_post_title_before_markup", __NAMESPACE__ ."\display_beans_post_title" );
-function display_beans_post_title(){
-
-//ddd(beans_get_header_max_width());
-
-    ?>
-
-
-sssss
-    <span uk-icon="icon: check"></span>
-
-    <a href="" uk-icon="icon: heart"></a>
-
-
-    sss
-<?php
-}
 
 
 
