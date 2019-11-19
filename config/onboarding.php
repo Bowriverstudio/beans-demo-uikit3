@@ -106,7 +106,7 @@ return array(
         ),
 
         'Built-with-the-ultimate-front-end-library' => array(
-            'post_title' => 'Stable updates',
+            'post_title' => 'Built with the ultimate front end library',
             'post_content' => require dirname(__FILE__) . '/import/content/Built-with-the-ultimate-front-end-library.php',
             'post_type' => 'post',
             'post_status' => 'publish',
@@ -118,8 +118,20 @@ return array(
             )
         ),
 
+        'Well-coded-and-easy-to-extend' => array(
+            'post_title' => 'Well coded and easy to extend',
+            'post_content' => require dirname(__FILE__) . '/import/content/Well-coded-and-easy-to-extend.php',
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'featured_image' => CHILD_URL . '/config/import/images/Extendible.jpg',
+            'comment_status' => 'closed',
+            'ping_status' => 'closed',
+            'post_meta' => array(
+                'beans_layout' => 'sp_c_ss'
+            )
+        ),
         'Loads-in-a-blink-of-an-eye' => array(
-            'post_title' => 'Stable updates',
+            'post_title' => 'Loads in a blink of an eye',
             'post_content' => require dirname(__FILE__) . '/import/content/Loads-in-a-blink-of-an-eye.php',
             'post_type' => 'post',
             'post_status' => 'publish',
@@ -170,8 +182,28 @@ return array(
             'layout' => array(
                 'title' => 'Layout'
             ),
+            'beans-looks-beautiful-on-all-devices' => array(
+                'title' => 'Single Sidebar Right',
+                'parent' => 'layout'
+            ),
+            'SEO-friendly' => array(
+                'title' => 'Single Sidebar Left',
+                'parent' => 'layout'
+            ),
+            'Built-with-the-ultimate-front-end-library' => array(
+                'title' => 'Double Sidebar Right',
+                'parent' => 'layout'
+            ),
             'Loads-in-a-blink-of-an-eye' => array(
-                'title' => 'Loads in a blink of an eye',
+                'title' => 'Double Sidebar Left',
+                'parent' => 'layout'
+            ),
+            'Well-coded-and-easy-to-extend' => array(
+                'title' => 'Opposite Sidebar',
+                'parent' => 'layout'
+            ),
+            'Stable-updates' => array(
+                'title' => 'No Sidebar',
                 'parent' => 'layout'
             ),
             'typography' => array(
@@ -255,7 +287,10 @@ return array(
         ],
 
     ],
-    'theme_mod'=> [
+    'theme_mod' => [
         'beans_display_toolbar' => true
     ],
+    'options' => [
+        'posts_per_page' => 3
+    ]
 );
