@@ -13,6 +13,7 @@ namespace Beans_Demo_UiKit3;
 // Include Beans. Do not remove the line below.
 require_once( get_template_directory() . '/lib/init.php' );
 
+require_once (CHILD_PATH .'/lib/renderer/fragments/toolbar.php');
 
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__.'\beans_demo_enqueue' );

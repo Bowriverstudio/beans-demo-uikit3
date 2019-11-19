@@ -61,6 +61,7 @@ return array(
                 'public_url' => 'https://en-ca.wordpress.org/plugins/rollbar/',
                 'icon' => 'https://ps.w.org/rollbar/assets/icon-256x256.png?rev=1281525',
                 'description' => 'Rollbar collects errors that happen in your application, notifies you, and analyzes them so you can debug and fix them.',
+                'install' => 'wp plugin install rollbar --activate;',
                 'required' => false
             ),
         ),
@@ -253,5 +254,8 @@ return array(
             ],
         ],
 
+    ],
+    'theme_mod'=> [
+        'beans_display_toolbar' => true
     ],
 );

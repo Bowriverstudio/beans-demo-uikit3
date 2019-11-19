@@ -1,0 +1,24 @@
+
+.tm-toolbar {
+
+  background-color: #222;
+
+  * {
+    color: #fff;
+    line-height: 45px;
+  }
+
+  .tm-logo {
+    font-size: 11px;
+  }
+  .uk-float-right a {
+    line-height: 45px;
+    padding: 0 10px;
+    background-color: #039460;
+  }
+
+  img {
+    width: 85px;
+    margin-top: -3px;
+  }
+}
