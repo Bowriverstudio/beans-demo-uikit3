@@ -57,8 +57,6 @@ function beans_includes()
     if ( is_customize_preview() ) {
         require_once get_stylesheet_directory().'/lib/admin/wp-customizer.php';
     }
-
-
 }
 
 
