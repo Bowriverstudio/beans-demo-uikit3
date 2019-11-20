@@ -11,7 +11,7 @@
 return <<<CONTENT
 
 <!-- wp:paragraph -->
-<p>Everybody loves one click updates! We love it too, but more importantly, we love when things don’t go wrong. Making sure that your websites don’t break is one of our top priorities.<br></p>
+<p>Search engines like fast, users like fast, you like fast and guess what, we like fast too. Beans is built with speed in mind. Every line of code is optimized to its maximum and all parts of the theme are only loaded when needed. Moreover, assets are combined into one file which is minified and cached on a per page basis if need be. It doesn’t get better than that.<br></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->

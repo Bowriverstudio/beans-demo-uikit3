@@ -11,7 +11,9 @@
 return <<<CONTENT
 
 <!-- wp:paragraph -->
-<p>UIkit is the best front-end framework on the market, at least in our opinion. We’ve streamlined it even more by letting you only load the components you need on a per page basis. By doing so, your pages are kept light-weight and load within the blink of an eye.<br></p>
+<p>LESS, CSS3, HTML5 and jQuery are no strangers to Beans theme. In fact, these technologies are what makes Beans. We use the most advanced technologies without compromising on stability.</p>
+
+<p>Beans theme is built with flexibility and extendibility in mind. Every element on the page can be moved, modified or removed. If you are a pro, the powerful API will blow you away.<br></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->

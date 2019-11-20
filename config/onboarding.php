@@ -73,6 +73,7 @@ return array(
             'post_content' => require dirname(__FILE__) . '/import/content/beans-looks-beautiful-on-all-devices.php',
             'post_type' => 'post',
             'post_status' => 'publish',
+            'post_excerpt'   => 'Beans looks beautiful on all devices. Not only does the content resize appropriately, Beans also creates, caches and serves images best suited to the device your website is viewed on. Your websites shouldn’t just work on mobile devices, it should be a piece of art you are proud of.',
             'featured_image' => CHILD_URL . '/config/import/images/Responsive.jpg',
             'comment_status' => 'closed',
             'ping_status' => 'closed',
@@ -86,6 +87,7 @@ return array(
             'post_type' => 'post',
             'post_status' => 'publish',
             'featured_image' => CHILD_URL . '/config/import/images/Seo.jpg',
+            'post_excerpt'   => 'Search engines love sites that are lightweight, coded semantically and fast loading. Sites built with Beans won’t be lonely on page 50’s of Googles search results. Write good content and let Beans take your website to the first page on google.',
             'comment_status' => 'closed',
             'ping_status' => 'closed',
             'post_meta' => array(
@@ -98,6 +100,7 @@ return array(
             'post_type' => 'post',
             'post_status' => 'publish',
             'featured_image' => CHILD_URL . '/config/import/images/Updates.jpg',
+            'post_excerpt'   => 'Everybody loves one click updates! We love it too, but more importantly, we love when things don’t go wrong. Making sure that your websites don’t break is one of our top priorities.',
             'comment_status' => 'closed',
             'ping_status' => 'closed',
             'post_meta' => array(
@@ -111,6 +114,7 @@ return array(
             'post_type' => 'post',
             'post_status' => 'publish',
             'featured_image' => CHILD_URL . '/config/import/images/Updates.jpg',
+            'post_excerpt'   => 'UIkit is the best front-end framework on the market, at least in our opinion. We’ve streamlined it even more by letting you only load the components you need on a per page basis. By doing so, your pages are kept light-weight and load within the blink of an eye.',
             'comment_status' => 'closed',
             'ping_status' => 'closed',
             'post_meta' => array(
@@ -124,6 +128,7 @@ return array(
             'post_type' => 'post',
             'post_status' => 'publish',
             'featured_image' => CHILD_URL . '/config/import/images/Extendible.jpg',
+            'post_excerpt'   => 'Beans theme is built with flexibility and extendibility in mind. Every element on the page can be moved, modified or removed. If you are a pro, the powerful API will blow you away.',
             'comment_status' => 'closed',
             'ping_status' => 'closed',
             'post_meta' => array(
@@ -136,6 +141,7 @@ return array(
             'post_type' => 'post',
             'post_status' => 'publish',
             'featured_image' => CHILD_URL . '/config/import/images/Speed.jpg',
+            'post_excerpt'   => 'Search engines like fast, users like fast, you like fast and guess what, we like fast too. Beans is built with speed in mind. Every line of code is optimized to its maximum and all parts of the theme are only loaded when needed. ',
             'comment_status' => 'closed',
             'ping_status' => 'closed',
             'post_meta' => array(
@@ -288,9 +294,10 @@ return array(
 
     ],
     'theme_mod' => [
-        'beans_display_toolbar' => true
+        'beans_display_toolbar' => true,
+        'blog_content' => 'summary'
     ],
     'options' => [
-        'posts_per_page' => 3
+        'posts_per_page' => 3,
     ]
 );
