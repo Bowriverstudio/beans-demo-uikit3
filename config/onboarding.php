@@ -1,22 +1,15 @@
 <?php
 /**
- * Genesis Sample.
+ * Beans Demo.
  *
- * Onboarding config to load plugins and homepage content on theme activation.
- *
- * @package Genesis Sample
- * @author  StudioPress
- * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
  */
 // @TODO Disnel - Issue Onboarding - format Required plugins
-// @TODO Disnel - Onboarding: Add Pages.
 
 return array(
     'title' => __('Beans Demo', 'tm-beans'),
     'description' => __('Beans Demo with UiKit 2 as the frontend framework.', 'tm-beans'),
-    'thumbnail' => get_stylesheet_directory_uri() . '/config/import/images/thumbnails/home-black-white.jpg',
-    'demo_url' => 'https://demo.studiopress.com/genesis-sample/',
+//    'thumbnail' => get_stylesheet_directory_uri() . '/config/import/images/thumbnails/home-black-white.jpg',
+    'demo_url' => 'https://demo.devbrs.com/',
     'dependencies' => array(
         'plugins' => array(
 
@@ -177,7 +170,46 @@ return array(
                 'beans_layout' => 'c'
             )
         ),
-
+        'make-beans-framework-agnostic' => array(
+            'post_title' => 'Make Beans Framework Agnostic',
+            'post_content' => require ONBOARDING_CONTENT_PATH .'make-beans-framework-agnostic.php',
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'featured_image' => ONBOARDING_IMAGE_URL .'CSS-framework.jpg',
+            'post_excerpt'   => 'The landscape of frontend frameworks has changed since 2015 when we felt that UiKit 2 was the ultimate front end framework. Now ... ',
+            'post_date'      => '2019-11-01',
+            'comment_status' => 'closed',
+            'ping_status' => 'closed',
+            'post_meta' => array(
+                'beans_layout' => 'c_sp'
+            )
+        ),
+        'beans-2-0' => array(
+            'post_title' => 'Beans 2.0 pre-alpha',
+            'slug' => 'beans-2-0',
+            'post_content' => require ONBOARDING_CONTENT_PATH .'make-beans-framework-agnostic.php',
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'featured_image' => ONBOARDING_IMAGE_URL .'CSS-framework.jpg',
+            'post_excerpt'   => 'Beans 2.0 is coming soon. ',
+            'post_date'      => '2019-11-21',
+            'comment_status' => 'closed',
+            'ping_status' => 'closed',
+            'post_meta' => array(
+                'beans_layout' => 'c_sp'
+            )
+        ),
+        'onboarding' => array(
+            'post_title' => 'Onboard this demo theme',
+            'post_content' => require ONBOARDING_CONTENT_PATH .'onboard-this-demo-theme.php',
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'featured_image' => ONBOARDING_IMAGE_URL .'CSS-framework.jpg',
+            'post_excerpt'   => 'Beans 2.0 is coming soon. ',
+            'post_date'      => '2019-11-21',
+            'comment_status' => 'closed',
+            'ping_status' => 'closed',
+        ),
 
     ),
 
@@ -301,7 +333,8 @@ return array(
     ],
     'theme_mod' => [
         'beans_display_toolbar' => true,
-        'blog_content' => 'summary'
+        'blog_content' => 'summary',
+        'beans_layout' => 'c_sp',
     ],
     'options' => [
         'posts_per_page' => 3,
