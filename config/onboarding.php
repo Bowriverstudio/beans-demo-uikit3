@@ -353,8 +353,6 @@ return array(
     'options' => [
         'posts_per_page' => 3,
         'permalink_structure' => '/%postname%/',
-        'beans_layout' => 'c_sp',
-
     ],
     'category_data' => [
         'categories' => [
