@@ -41,6 +41,14 @@ return array(
                 'required' => false
             ),
             array(
+                'name' => __('Gutenberg', 'tm-beans'),
+                'slug' => 'gutenberg/gutenberg.php',
+                'public_url' => 'https://wordpress.org/gutenberg/',
+                'description' => 'Gutenberg is the new editor for wordpress.  The Gutenberg plugin is a few versions ahead of the wordpress core.',
+                'install' => 'wp plugin install gutenberg --activate;',
+                'required' => false
+            ),
+            array(
                 'name' => __('Query Monitor', 'tm-beans'),
                 'slug' => 'query-monitor/query-monitor.php',
                 'public_url' => 'https://querymonitor.com/',
@@ -48,15 +56,16 @@ return array(
                 'install' => 'wp plugin install query-monitor --activate;',
                 'required' => false
             ),
-            array(
-                'name' => __('Rollbar', 'tm-beans'),
-                'slug' => 'rollbar/rollbar-php-wordpress.php',
-                'public_url' => 'https://en-ca.wordpress.org/plugins/rollbar/',
-                'icon' => 'https://ps.w.org/rollbar/assets/icon-256x256.png?rev=1281525',
-                'description' => 'Rollbar collects errors that happen in your application, notifies you, and analyzes them so you can debug and fix them.',
-                'install' => 'wp plugin install rollbar --activate;',
-                'required' => false
-            ),
+
+//            array(
+//                'name' => __('Rollbar', 'tm-beans'),
+//                'slug' => 'rollbar/rollbar-php-wordpress.php',
+//                'public_url' => 'https://en-ca.wordpress.org/plugins/rollbar/',
+//                'icon' => 'https://ps.w.org/rollbar/assets/icon-256x256.png?rev=1281525',
+//                'description' => 'Rollbar collects errors that happen in your application, notifies you, and analyzes them so you can debug and fix them.',
+//                'install' => 'wp plugin install rollbar --activate;',
+//                'required' => false
+//            ),
         ),
     ),
 
@@ -191,12 +200,12 @@ return array(
             )
         ),
         'beans-2-0' => array(
-            'post_title' => 'Beans 2.0 pre-alpha',
+            'post_title' => 'Not official Beans 2.0 alpha',
             'slug' => 'beans-2-0',
             'post_content' => require ONBOARDING_CONTENT_PATH . 'beans-2.0.php',
             'post_type' => 'post',
             'post_status' => 'publish',
-            'featured_image' => ONBOARDING_IMAGE_URL . 'CSS-framework.jpg',
+            'featured_image' => ONBOARDING_IMAGE_URL . 'beans.png',
             'post_excerpt' => 'Beans 2.0 is coming soon. ',
             'post_date' => '2019-11-21',
             'comment_status' => 'closed',
@@ -210,7 +219,7 @@ return array(
             'post_content' => require ONBOARDING_CONTENT_PATH . 'onboard-this-demo-theme.php',
             'post_type' => 'post',
             'post_status' => 'publish',
-            'featured_image' => ONBOARDING_IMAGE_URL . 'CSS-framework.jpg',
+            'featured_image' => ONBOARDING_IMAGE_URL . 'Onboarding.png',
             'post_excerpt' => 'Beans 2.0 is coming soon. ',
             'post_date' => '2019-11-21',
             'comment_status' => 'closed',
