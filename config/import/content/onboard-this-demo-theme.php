@@ -98,4 +98,24 @@ wp theme activate beans-demo-uikit3
 <figure class="wp-block-image size-large"><img src="$image_url" alt="" class="wp-image-38"/></figure>
 <!-- /wp:image -->
 
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading -->
+<h2>Contribute to the demo content</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>We are always looking for contributors who would like to help making Beans better. If you would like to contribute to the demo content, please submit your content&nbsp;via our&nbsp;<a rel="noreferrer noopener" href="https://www.getbeans.io/contact" target="_blank">contact form</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>“or contribute with what you do best”</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Whether you are a web developer, a screencast expert, a marketing guru or just shine at giving valuable advice, there is room for all types of contributions. So get your hands dirty and help Beans become one of the best framework&nbsp;available.<br></p>
+<!-- /wp:paragraph -->
+
 CONTENT;
