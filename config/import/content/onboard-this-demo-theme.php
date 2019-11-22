@@ -8,48 +8,94 @@
  * @link    https://www.bowriverstudio.com/
  */
 
-$table_url = ONBOARDING_IMAGE_URL. 'table-cssframework.png';
+$image_url = ONBOARDING_IMAGE_URL. 'onboarding-screenshot.png';
 
 return <<<CONTENT
-
 <!-- wp:paragraph -->
-<p>The landscape of frontend frameworks has changed since 2015 when we felt that <a href="https://getuikit.com/v2/">UiKit 2 </a>was the <a href="http://beandemouikit3.test/built-with-the-ultimate-front-end-library/">ultimate front end framework</a>. </p>
+<p>Onboarding a child theme is trivial with Beans.  Simply install the required plugins, themes then press one button which will import the default navigation, widgets, posts, pages, categories, and settings.  </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>To accomplish this <a href="https://github.com/Getbeans/Beans/issues/51">feature request</a>, we decoupled Beans from UiKit 2.  Currently, there are two plugins:</p>
+<p>From a fresh copy of wordpress do the following steps.  Either from command line or manually. </p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2>Beans Frontend Framework uikit2</h2>
+<!-- wp:heading {"level":3} -->
+<h3>Step 1: Install Required Plugins</h3>
+<!-- /wp:heading -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code lang="bash" class="language-bash">#In the Plugin Directory
+cd wp-content/plugins
+
+#Download and activate the plugin beans-frontend-framework-uikit3
+#Download from here https://github.com/Bowriverstudio/beans-frontend-framework-uikit3
+wp plugin activate beans-frontend-framework-uikit3</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Install Recommended Plugins</h3>
+<!-- /wp:heading -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code lang="bash" class="language-bash">#From the plugin directory
+
+#Download and activate the plugin beans-frontend-framework-uikit3
+#Download from here - https://github.com/Bowriverstudio/Beans-Visual-Hook-Guide
+wp plugin activate Beans-Visual-Hook-Guide
+
+wp plugin install code-syntax-block --activate
+wp plugin install debug-toolkit --activate
+wp plugin install gutenberg --activate
+wp plugin install query-monitor --activate</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Optionally Remove Default Wordpress Content</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>This <a href="https://github.com/Bowriverstudio/beans-frontend-framework-uikit2">plugin</a> allows sites to use continue to use uikit 2 and get the other benefits of Beans 2.0.  It is not planned for active development, just as a way to handle legacy projects.</p>
+<p>Wordpress by default adds a few widgets and a sample post.  To get an exact copy of this site, simply remove the widgets and default post manually through the dashboard or use the command line.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2>Beans Frontend Framework uikit3</h2>
+<!-- wp:code -->
+<pre class="wp-block-code"><code lang="bash" class="language-bash">wp post delete 1
+wp widget delete search-2 recent-posts-2  recent-comments-2</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Install Theme</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>This <a href="https://github.com/Bowriverstudio/beans-frontend-framework-uikit3">plugin</a> allows you to use uikit 3 in your child theme.   This plugin does not include the framework uikit3 it just renderers the HTML structure to the updated syntax and makes a few HTML structural changes to accommodate it.</p>
-<!-- /wp:paragraph -->
+<!-- wp:code -->
+<pre class="wp-block-code"><code lang="bash" class="language-bash"># Change directory to theme
+cd wp-content/themes
 
-<!-- wp:paragraph -->
-<p>The child theme includes webpack, and handles the building of uikit 3 along  with any custom scss or jsx.</p>
-<!-- /wp:paragraph -->
+# Download Trial version of Beans (not production ready)
+# Download from here: https://github.com/Bowriverstudio/Beans/tree/cssframework
+# Note the branch
+
+# Download this theme
+# From here https://github.com/Bowriverstudio/beans-demo-uikit3
+# Activate 
+wp theme activate beans-demo-uikit3
+
+</code></pre>
+<!-- /wp:code -->
 
 <!-- wp:heading -->
-<h2>Future</h2>
+<h2>Onboard</h2>
 <!-- /wp:heading -->
 
+<!-- wp:code -->
+<pre class="wp-block-code"><code lang="bash" class="language-bash">wp beans onboard</code></pre>
+<!-- /wp:code -->
+
 <!-- wp:paragraph -->
-<p>There are many css frameworks.  We currently use bootstrap for several other projects and plan to port them here.  Of course, the plugin will be opensource as well. </p>
+<p>or</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":36} -->
-<figure class="wp-block-image"><img src="$table_url" alt="" class="wp-image-36"/></figure>
+<!-- wp:image {"id":38,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="$image_url" alt="" class="wp-image-38"/></figure>
 <!-- /wp:image -->
 
 CONTENT;

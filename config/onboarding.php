@@ -13,14 +13,14 @@ return array(
     'dependencies' => array(
         'plugins' => array(
 
-           array(
-               'name' => __('Beans Frontend Framework uikit3', 'tm-beans'),
-               'slug' => 'beans-frontend-framework-uikit3/beans-frontend-framework-uikit3.php',
-               'public_url' => 'https://github.com/Bowriverstudio/beans-frontend-framework-uikit3',
-               'description' => 'Handles rendering the for incredibly powerful Beans Framework with uikit3.',
-               'install' => 'Download from https://github.com/Bowriverstudio/beans-frontend-framework-uikit3',
-               'required' => true
-           ),
+            array(
+                'name' => __('Beans Frontend Framework uikit3', 'tm-beans'),
+                'slug' => 'beans-frontend-framework-uikit3/beans-frontend-framework-uikit3.php',
+                'public_url' => 'https://github.com/Bowriverstudio/beans-frontend-framework-uikit3',
+                'description' => 'Handles rendering the for incredibly powerful Beans Framework with uikit3.',
+                'install' => 'Download from https://github.com/Bowriverstudio/beans-frontend-framework-uikit3',
+                'required' => true
+            ),
 
             array(
                 'name' => __('Beans Visual Hook Guide', 'tm-beans'),
@@ -66,10 +66,11 @@ return array(
             'post_content' => require dirname(__FILE__) . '/import/content/beans-looks-beautiful-on-all-devices.php',
             'post_type' => 'post',
             'post_status' => 'publish',
-            'post_excerpt'   => 'Beans looks beautiful on all devices. Not only does the content resize appropriately, Beans also creates, caches and serves images best suited to the device your website is viewed on. Your websites shouldn’t just work on mobile devices, it should be a piece of art you are proud of.',
+            'post_excerpt' => 'Beans looks beautiful on all devices. Not only does the content resize appropriately, Beans also creates, caches and serves images best suited to the device your website is viewed on. Your websites shouldn’t just work on mobile devices, it should be a piece of art you are proud of.',
             'featured_image' => CHILD_URL . '/config/import/images/Responsive.jpg',
             'comment_status' => 'closed',
-            'post_date'      => '2015-09-10',
+            'post_date' => '2015-09-10',
+            'post_category' => ['beans-1-x'],
             'ping_status' => 'closed',
             'post_meta' => array(
                 'beans_layout' => 'c_sp'
@@ -81,9 +82,10 @@ return array(
             'post_type' => 'post',
             'post_status' => 'publish',
             'featured_image' => CHILD_URL . '/config/import/images/Seo.jpg',
-            'post_excerpt'   => 'Search engines love sites that are lightweight, coded semantically and fast loading. Sites built with Beans won’t be lonely on page 50’s of Googles search results. Write good content and let Beans take your website to the first page on google.',
+            'post_excerpt' => 'Search engines love sites that are lightweight, coded semantically and fast loading. Sites built with Beans won’t be lonely on page 50’s of Googles search results. Write good content and let Beans take your website to the first page on google.',
             'comment_status' => 'closed',
-            'post_date'      => '2015-08-10',
+            'post_date' => '2015-08-10',
+            'post_category' => ['beans-1-x'],
             'ping_status' => 'closed',
             'post_meta' => array(
                 'beans_layout' => 'sp_c'
@@ -95,9 +97,10 @@ return array(
             'post_type' => 'post',
             'post_status' => 'publish',
             'featured_image' => CHILD_URL . '/config/import/images/Updates.jpg',
-            'post_excerpt'   => 'Everybody loves one click updates! We love it too, but more importantly, we love when things don’t go wrong. Making sure that your websites don’t break is one of our top priorities.',
+            'post_excerpt' => 'Everybody loves one click updates! We love it too, but more importantly, we love when things don’t go wrong. Making sure that your websites don’t break is one of our top priorities.',
             'comment_status' => 'closed',
-            'post_date'      => '2015-07-10',
+            'post_category' => ['beans-1-x'],
+            'post_date' => '2015-07-10',
             'ping_status' => 'closed',
             'post_meta' => array(
                 'beans_layout' => 'c'
@@ -110,9 +113,10 @@ return array(
             'post_type' => 'post',
             'post_status' => 'publish',
             'featured_image' => CHILD_URL . '/config/import/images/Updates.jpg',
-            'post_excerpt'   => 'UIkit is the best front-end framework on the market, at least in our opinion. We’ve streamlined it even more by letting you only load the components you need on a per page basis. By doing so, your pages are kept light-weight and load within the blink of an eye.',
+            'post_excerpt' => 'UIkit is the best front-end framework on the market, at least in our opinion. We’ve streamlined it even more by letting you only load the components you need on a per page basis. By doing so, your pages are kept light-weight and load within the blink of an eye.',
             'comment_status' => 'closed',
-            'post_date'      => '2015-06-10',
+            'post_category' => ['beans-1-x'],
+            'post_date' => '2015-06-10',
             'ping_status' => 'closed',
             'post_meta' => array(
                 'beans_layout' => 'c_sp_ss'
@@ -124,10 +128,11 @@ return array(
             'post_content' => require dirname(__FILE__) . '/import/content/Well-coded-and-easy-to-extend.php',
             'post_type' => 'post',
             'post_status' => 'publish',
+            'post_category' => ['beans-1-x'],
             'featured_image' => CHILD_URL . '/config/import/images/Extendible.jpg',
-            'post_excerpt'   => 'Beans theme is built with flexibility and extendibility in mind. Every element on the page can be moved, modified or removed. If you are a pro, the powerful API will blow you away.',
+            'post_excerpt' => 'Beans theme is built with flexibility and extendibility in mind. Every element on the page can be moved, modified or removed. If you are a pro, the powerful API will blow you away.',
             'comment_status' => 'closed',
-            'post_date'      => '2015-01-10',
+            'post_date' => '2015-01-10',
             'ping_status' => 'closed',
             'post_meta' => array(
                 'beans_layout' => 'sp_c_ss'
@@ -137,10 +142,11 @@ return array(
             'post_title' => 'Loads in a blink of an eye',
             'post_content' => require dirname(__FILE__) . '/import/content/Loads-in-a-blink-of-an-eye.php',
             'post_type' => 'post',
+            'post_category' => ['beans-1-x'],
             'post_status' => 'publish',
             'featured_image' => CHILD_URL . '/config/import/images/Speed.jpg',
-            'post_excerpt'   => 'Search engines like fast, users like fast, you like fast and guess what, we like fast too. Beans is built with speed in mind. Every line of code is optimized to its maximum and all parts of the theme are only loaded when needed. ',
-            'post_date'      => '2015-05-10',
+            'post_excerpt' => 'Search engines like fast, users like fast, you like fast and guess what, we like fast too. Beans is built with speed in mind. Every line of code is optimized to its maximum and all parts of the theme are only loaded when needed. ',
+            'post_date' => '2015-05-10',
             'comment_status' => 'closed',
             'ping_status' => 'closed',
             'post_meta' => array(
@@ -172,12 +178,12 @@ return array(
         ),
         'make-beans-framework-agnostic' => array(
             'post_title' => 'Make Beans Framework Agnostic',
-            'post_content' => require ONBOARDING_CONTENT_PATH .'make-beans-framework-agnostic.php',
+            'post_content' => require ONBOARDING_CONTENT_PATH . 'make-beans-framework-agnostic.php',
             'post_type' => 'post',
             'post_status' => 'publish',
-            'featured_image' => ONBOARDING_IMAGE_URL .'CSS-framework.jpg',
-            'post_excerpt'   => 'The landscape of frontend frameworks has changed since 2015 when we felt that UiKit 2 was the ultimate front end framework. Now ... ',
-            'post_date'      => '2019-11-01',
+            'featured_image' => ONBOARDING_IMAGE_URL . 'CSS-framework.jpg',
+            'post_excerpt' => 'The landscape of frontend frameworks has changed since 2015 when we felt that UiKit 2 was the ultimate front end framework. Now ... ',
+            'post_date' => '2019-11-01',
             'comment_status' => 'closed',
             'ping_status' => 'closed',
             'post_meta' => array(
@@ -187,12 +193,12 @@ return array(
         'beans-2-0' => array(
             'post_title' => 'Beans 2.0 pre-alpha',
             'slug' => 'beans-2-0',
-            'post_content' => require ONBOARDING_CONTENT_PATH .'make-beans-framework-agnostic.php',
+            'post_content' => require ONBOARDING_CONTENT_PATH . 'beans-2.0.php',
             'post_type' => 'post',
             'post_status' => 'publish',
-            'featured_image' => ONBOARDING_IMAGE_URL .'CSS-framework.jpg',
-            'post_excerpt'   => 'Beans 2.0 is coming soon. ',
-            'post_date'      => '2019-11-21',
+            'featured_image' => ONBOARDING_IMAGE_URL . 'CSS-framework.jpg',
+            'post_excerpt' => 'Beans 2.0 is coming soon. ',
+            'post_date' => '2019-11-21',
             'comment_status' => 'closed',
             'ping_status' => 'closed',
             'post_meta' => array(
@@ -201,23 +207,22 @@ return array(
         ),
         'onboarding' => array(
             'post_title' => 'Onboard this demo theme',
-            'post_content' => require ONBOARDING_CONTENT_PATH .'onboard-this-demo-theme.php',
+            'post_content' => require ONBOARDING_CONTENT_PATH . 'onboard-this-demo-theme.php',
             'post_type' => 'post',
             'post_status' => 'publish',
-            'featured_image' => ONBOARDING_IMAGE_URL .'CSS-framework.jpg',
-            'post_excerpt'   => 'Beans 2.0 is coming soon. ',
-            'post_date'      => '2019-11-21',
+            'featured_image' => ONBOARDING_IMAGE_URL . 'CSS-framework.jpg',
+            'post_excerpt' => 'Beans 2.0 is coming soon. ',
+            'post_date' => '2019-11-21',
             'comment_status' => 'closed',
             'ping_status' => 'closed',
         ),
-
     ),
 
     'navigation_menus' => array(
         'primary' => array(
             'homepage' => array(
                 'title' => 'Home',
-                'url'   => get_site_url()
+                'url' => get_site_url()
             ),
             'gutenberg-blocks' => array(
                 'title' => 'Gutenberg',
@@ -314,13 +319,13 @@ return array(
             ],
         ],
         'sidebar_secondary' => [
-            [
-                // wp option get widget_calendar
-                'type' => 'calendar',
-                'args' => [
-                    'title' => ''
-                ],
-            ],
+//            [ @TODO - Format the widget first
+//                // wp option get widget_calendar
+//                'type' => 'calendar',
+//                'args' => [
+//                    'title' => ''
+//                ],
+//            ],
             [
                 // wp option get widget_meta
                 'type' => 'meta',
@@ -339,5 +344,21 @@ return array(
     'options' => [
         'posts_per_page' => 3,
         'permalink_structure' => '/%postname%/',
+        'beans_layout' => 'c_sp',
+
+    ],
+    'category_data' => [
+        'categories' => [
+            'beans-2-0' => [
+                'category_nicename' => 'Beans 2.0',
+                'cat_name' => 'Beans 2.0',
+            ],
+            'beans-1-x' => [
+                'category_nicename' => 'Beans 1.x',
+                'cat_name' => 'Beans 1.x',
+            ],
+        ],
+        'default_category' => 'beans-2-0',
+        'remove_uncategorized' => true,
     ]
 );
