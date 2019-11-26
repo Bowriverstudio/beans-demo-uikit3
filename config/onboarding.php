@@ -359,7 +359,6 @@ return array(
     'theme_mod' => [
         'beans_display_toolbar' => true,
         'blog_content' => 'summary',
-        'beans_layout' => 'c_sp',
     ],
     'options' => [
         'posts_per_page' => 3,
