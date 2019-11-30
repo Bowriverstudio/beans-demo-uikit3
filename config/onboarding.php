@@ -31,6 +31,16 @@ return array(
                 'install' => 'Download from https://github.com/Bowriverstudio/Beans-Visual-Hook-Guide - there is a small patch',
                 'required' => false
             ),
+
+            array(
+                'name' => __('Beans WP Forms Uikit3 addon', 'tm-beans'),
+                'slug' => 'beans-wpforms-uikit3-addon/plugin.php',
+                'public_url' => 'https://github.com/Bowriverstudio/beans-frontend-framework-uikit3',
+                'description' => 'Converts the wpforms styles into uikit3.  In Development.',
+                'install' => 'Download from https://github.com/Bowriverstudio/beans-wpforms-uikit3-addon',
+                'required' => false
+            ),
+
             array(
                 'name' => __('Debug Toolkit', 'tm-beans'),
                 'slug' => 'debug-toolkit/debug-toolkit.php',
@@ -54,6 +64,14 @@ return array(
                 'public_url' => 'https://querymonitor.com/',
                 'description' => 'Query Monitor is the developer tools panel for WordPress',
                 'install' => 'wp plugin install query-monitor --activate;',
+                'required' => false
+            ),
+            array(
+                'name' => __('WP Forms', 'tm-beans'),
+                'slug' => 'wpforms-lite/wpforms.php',
+                'public_url' => 'https://wpforms.com',
+                'description' => 'WordPress Contact Form Builder Plugin',
+                'install' => 'wp plugin install wpforms-lite --activate;',
                 'required' => false
             ),
 
@@ -236,6 +254,19 @@ return array(
             'comment_status' => 'closed',
             'ping_status' => 'closed',
         ),
+
+        'contact' => array(
+            'post_title' => 'Got something on your mind? Tell us!',
+            'post_name'  => 'contact',
+            'post_content' => require ONBOARDING_CONTENT_PATH . 'contact.php',
+            'post_type' => 'page',
+            'post_status' => 'publish',
+            'comment_status' => 'closed',
+            'ping_status' => 'closed',
+            'post_meta' => array(
+                'beans_layout' => 'c'
+            )
+        ),
     ),
 
     'navigation_menus' => array(
@@ -246,6 +277,13 @@ return array(
             ),
             'gutenberg-blocks' => array(
                 'title' => 'Gutenberg',
+            ),
+            'features' => array(
+                'title' => 'Features'
+            ),
+            'contact' => array(
+                'title' => 'Contact',
+                'parent' => 'features'
             ),
 
             'layout' => array(

@@ -17,11 +17,11 @@ $pagination-active-background:                   red;
 @import "../../../../plugins/beans-frontend-framework-uikit3/assets/scss/style.scss";
 @import "../../../../plugins/beans-frontend-framework-uikit3/assets/scss/gutenberg/index.scss";
 @import "../../../../plugins/beans-frontend-framework-uikit3/assets/scss/gutenberg/color-pallet.scss";
+@import "../../../../plugins/beans-frontend-framework-uikit3/assets/scss/gutenberg/font-sizes.scss";
+@import "../../../../plugins/beans-wpforms-uikit3-addon/assets/scss/wpstyles.scss";
 
 
 @import "/default/toolbar.scss";
-
-
 
 // 4. Import UIkit
 @import "~uikit/src/scss/uikit-theme.scss";

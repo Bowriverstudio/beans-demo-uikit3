@@ -66,5 +66,13 @@ function beans_includes()
 
 
 
+// USED FOR TESTING.
+//beans_add_attribute('beans_post', 'class', 'remove_top_padding remove_border');
+
+//add_filter('the_content', __NAMESPACE__.'\test');
+function test ($content){
+//    return require ONBOARDING_CONTENT_PATH . 'contact.php';
+}
+
 
 
