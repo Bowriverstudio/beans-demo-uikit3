@@ -88,6 +88,23 @@ return array(
     ),
 
     'content' => array(
+        'layouts' => array(
+            'post_title' => 'Layouts',
+            'post_content' => require dirname(__FILE__) . '/import/content/layouts.php',
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'post_excerpt' => 'Present your content any way you’d like.',
+            'featured_image' => CHILD_URL . '/config/import/images/website-layouts.png',
+            'comment_status' => 'closed',
+            'post_date' => '2019-12-09',
+            'post_category' => ['beans-2-0'],
+            'ping_status' => 'closed',
+            'post_meta' => array(
+                'beans_layout' => 'c',
+                '_beans_remove_actions' => '{"beans_post_image":true}'
+            ),
+        ),
+
         'beans-looks-beautiful-on-all-devices' => array(
             'post_title' => 'Beans looks beautiful on all devices',
             'post_content' => require dirname(__FILE__) . '/import/content/beans-looks-beautiful-on-all-devices.php',
@@ -157,7 +174,7 @@ return array(
             'post_status' => 'publish',
             'post_category' => ['beans-1-x'],
             'featured_image' => CHILD_URL . '/config/import/images/Extendible.jpg',
-            'post_excerpt' => 'Beans theme is built with flexibility and extendibility in mind. Every element on the page can be moved, modified or removed. If you are a pro, the powerful API will blow you away.',
+            'post_excerpt' => 'Beans theme is built with flexibility and extendability in mind. Every element on the page can be moved, modified or removed. If you are a pro, the powerful API will blow you away.',
             'comment_status' => 'closed',
             'post_date' => '2015-01-10',
             'ping_status' => 'closed',
@@ -177,7 +194,7 @@ return array(
             'comment_status' => 'closed',
             'ping_status' => 'closed',
             'post_meta' => array(
-                'beans_layout' => 'c_sp_ss'
+                'beans_layout' => 'sp_ss_c'
             )
         ),
 
@@ -267,6 +284,88 @@ return array(
                 'beans_layout' => 'c'
             )
         ),
+        'container-xsmall' => array(
+            'post_title' => 'Container xsmall',
+            'post_name'  => 'container-xsmall',
+            'post_content' => require ONBOARDING_CONTENT_PATH . 'layouts.php',
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'comment_status' => 'closed',
+            'ping_status' => 'closed',
+            'post_category' => ['ipsum'],
+            'post_meta' => array(
+                '_beans_body_container' => 'uk-container-xsmall',
+                'beans_layout' => 'c'
+            )
+        ),
+        'container-small' => array(
+            'post_title' => 'Container Small',
+            'post_name'  => 'container-small',
+            'post_content' => require ONBOARDING_CONTENT_PATH . 'layouts.php',
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'comment_status' => 'closed',
+            'ping_status' => 'closed',
+            'post_category' => ['ipsum'],
+            'post_meta' => array(
+                '_beans_body_container' => 'uk-container-small',
+                'beans_layout' => 'c',
+                '_beans_remove_actions' => '{"beans_post_image":true}'
+            )
+        ),
+        'container-large' => array(
+            'post_title' => 'Container Large',
+            'post_name'  => 'container-large',
+            'post_content' => require ONBOARDING_CONTENT_PATH . 'layouts.php',
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'comment_status' => 'closed',
+            'ping_status' => 'closed',
+            'post_category' => ['ipsum'],
+            'post_meta' => array(
+                '_beans_body_container' => 'uk-container-large',
+                'beans_layout' => 'c'
+            )
+        ),
+        'container-default' => array(
+            'post_title' => 'Container Default Size',
+            'post_name'  => 'container-large',
+            'post_content' => require ONBOARDING_CONTENT_PATH . 'layouts.php',
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'comment_status' => 'closed',
+            'ping_status' => 'closed',
+            'post_category' => ['ipsum'],
+            'post_meta' => array(
+                'beans_layout' => 'c'
+            )
+        ),
+        'container-expand' => array(
+            'post_title' => 'Container Expand',
+            'post_name'  => 'container-expand',
+            'post_content' => require ONBOARDING_CONTENT_PATH . 'layouts.php',
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'comment_status' => 'closed',
+            'ping_status' => 'closed',
+            'post_category' => ['ipsum'],
+            'post_meta' => array(
+                '_beans_body_container' => 'uk-container-expand',
+                'beans_layout' => 'c'
+            )
+        ),
+        'landing' => array(
+            'post_title'     => 'Landing Page',
+            'post_content'   => require ONBOARDING_CONTENT_PATH. 'landing-page.php',
+            'post_type'      => 'page',
+            'post_status'    => 'publish',
+            'page_template'  => 'page-templates/landing.php',
+            'comment_status' => 'closed',
+            'ping_status'    => 'closed',
+            'meta_input'     => [
+                'beans_layout' => 'c'
+            ],
+        ),
     ),
 
     'navigation_menus' => array(
@@ -285,10 +384,20 @@ return array(
                 'title' => 'Contact',
                 'parent' => 'features'
             ),
+            'landing' => array(
+                'title' => 'Landing Page',
+                'parent' => 'features'
+            ),
 
             'layout' => array(
                 'title' => 'Layout'
             ),
+            'layouts' => array(
+                'title' => 'Layouts',
+                'parent' => 'layout'
+            ),
+
+
             'beans-looks-beautiful-on-all-devices' => array(
                 'title' => 'Single Sidebar Right',
                 'parent' => 'layout'
@@ -313,11 +422,32 @@ return array(
                 'title' => 'No Sidebar',
                 'parent' => 'layout'
             ),
+            'container-xsmall' => array(
+                'title' => 'Container xsmall',
+                'parent' => 'layout'
+            ),
+            'container-small' => array(
+                'title' => 'Container small',
+                'parent' => 'layout'
+            ),
+            'container-default' => array(
+                'title' => 'Container Default',
+                'parent' => 'layout'
+            ),
+            'container-large' => array(
+                'title' => 'Container Large',
+                'parent' => 'layout'
+            ),
+            'container-expand' => array(
+                'title' => 'Container expand',
+                'parent' => 'layout'
+            ),
             'typography' => array(
                 'title' => 'Typography',
             ),
 
         ),
+
     ),
     'widgets' => [
         'toolbar_left_area' => [
@@ -411,6 +541,10 @@ return array(
             'beans-1-x' => [
                 'category_nicename' => 'Beans 1.x',
                 'cat_name' => 'Beans 1.x',
+            ],
+            'ipsum' => [
+                'category_nicename' => 'ipsum',
+                'cat_name' => 'ipsum',
             ],
         ],
         'default_category' => 'beans-2-0',

@@ -64,15 +64,32 @@ function beans_includes()
     }
 }
 
-
-
 // USED FOR TESTING.
 //beans_add_attribute('beans_post', 'class', 'remove_top_padding remove_border');
 
 //add_filter('the_content', __NAMESPACE__.'\test');
 function test ($content){
-//    return require ONBOARDING_CONTENT_PATH . 'contact.php';
+    return require ONBOARDING_CONTENT_PATH . 'layouts.php';
 }
 
+//beans_remove_action('beans_post_image');
+
+add_filter( 'pre_get_posts', __NAMESPACE__ . '\exclude_category_home' );
+/**
+ * Excludes posts with specific categories from the homepage.
+ * @param $query
+ * @return mixed
+ */
+function exclude_category_home( $query ) {
+    if ( $query->is_home ) {
+        $ipsum_category = get_category_by_slug('ipsum');
+        if( $ipsum_category ){
+            $ipsum_id = $ipsum_category->term_id;
+         $query->set( 'cat', '-'. $ipsum_id );
+         // should we want multiple categories to be removed - $query->set( 'cat', '-5, -9, -23' );
+        }
+    }
+    return $query;
+}
 
 
