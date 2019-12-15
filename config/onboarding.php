@@ -74,16 +74,23 @@ return array(
                 'install' => 'wp plugin install wpforms-lite --activate;',
                 'required' => false
             ),
-
-//            array(
-//                'name' => __('Rollbar', 'tm-beans'),
-//                'slug' => 'rollbar/rollbar-php-wordpress.php',
-//                'public_url' => 'https://en-ca.wordpress.org/plugins/rollbar/',
-//                'icon' => 'https://ps.w.org/rollbar/assets/icon-256x256.png?rev=1281525',
-//                'description' => 'Rollbar collects errors that happen in your application, notifies you, and analyzes them so you can debug and fix them.',
-//                'install' => 'wp plugin install rollbar --activate;',
-//                'required' => false
-//            ),
+            array(
+                'name' => __('Rollbar', 'tm-beans'),
+                'slug' => 'rollbar/rollbar-php-wordpress.php',
+                'public_url' => 'https://en-ca.wordpress.org/plugins/rollbar/',
+                'icon' => 'https://ps.w.org/rollbar/assets/icon-256x256.png?rev=1281525',
+                'description' => 'Rollbar collects errors that happen in your application, notifies you, and analyzes them so you can debug and fix them.',
+                'install' => 'wp plugin install rollbar --activate;',
+                'required' => false
+            ),
+            array(
+                'name' => __('Uikit3 Gutenberg blocks for Wordpress', 'tm-beans'),
+                'slug' => 'uikit3-blocks-wordpress-plugin/plugin.php',
+                'public_url' => 'https://github.com/Bowriverstudio/uikit3-blocks-wordpress-plugin',
+                'description' => 'Adds uikit 3 blocks to Gutenberg',
+                'install' => 'Download from https://github.com/Bowriverstudio/uikit3-blocks-wordpress-plugin',
+                'required' => false
+            ),
         ),
     ),
 

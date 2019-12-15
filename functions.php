@@ -14,12 +14,12 @@ namespace Beans_Demo_UiKit3;
 require_once( get_template_directory() . '/lib/init.php' );
 
 
-add_action( 'enqueue_block_editor_assets', __NAMESPACE__.'\enqueue_frontend_and_editor' );
-add_action( 'wp_enqueue_scripts', __NAMESPACE__.'\enqueue_frontend_and_editor' );
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__.'\enqueue_frontend_and_editor_styles' );
+add_action( 'wp_enqueue_scripts', __NAMESPACE__.'\enqueue_frontend_and_editor_styles' );
 /**
  * Enqueue style on the frontend and editor
  */
-function enqueue_frontend_and_editor(){
+function enqueue_frontend_and_editor_styles(){
 
     $style_path = '/dist/css/style.css';
 
